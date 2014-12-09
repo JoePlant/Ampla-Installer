@@ -1,0 +1,8 @@
+Condition,Description
+Privileged,An administrator must approve or install [ProductName].
+NOT NEWERVERSIONDETECTED,A later version of [ProductName] is already installed.
+Installed OR NETFRAMEWORK40FULL,This application requires .NET Framework 4.0 or later. Please install the .NET Framework then run this installer again.
+(AMPLAVERSION = "0") EQV (AMPLAINSTALLPATH = "0"),Ampla versions prior to Ampla 5.0 cannot be upgraded without uninstalling the previous version. Please uninstall Ampla before proceeding with the installation.
+Installed OR UILevel = 5 OR SERVICEACCOUNT <> "",Installing Ampla in reduced UI mode requires the property SERVICEACCOUNT to be defined. Please refer to the user manual for further information on installing Ampla in reduced UI mode.
+Installed OR UILevel = 5 OR SERVICEPASSWORD <> "",Installing Ampla in reduced UI mode requires the property SERVICEPASSWORD to be defined. Please refer to the user manual for further information on installing Ampla in reduced UI mode.
+NOT REINSTALL,"Ampla does not support the Repair feature, please uninstall and reinstall."

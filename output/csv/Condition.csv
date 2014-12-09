@@ -1,0 +1,5 @@
+Feature_,Level,Condition
+FeatureService,1,(NETFRAMEWORK40FULL AND IIS AND ASPNET4) OR REMOVE
+FeatureConfigurationTools,0,WixUI_InstallMode = "InstallClient"
+FeatureConfigurationTools,1,(NETFRAMEWORK40FULL) OR REMOVE
+FeatureClientApps,1,DESKTOP_PA OR REMOVE

@@ -1,0 +1,344 @@
+Dialog_,Control,Type,X,Y,Width,Height,Attributes,Property,Text,Control_Next,Help
+FatalError,Description,Text,135,70,220,80,196611,,"[ProductName] Setup Wizard ended prematurely because of an error. Your system has not been modified. To install this program at a later time, run Setup Wizard again. Click the Finish button to exit the Setup Wizard.",,
+FatalError,Title,Text,135,20,220,60,196611,,{\WixUI_Font_Bigger}[ProductName] Setup Wizard ended prematurely,,
+FatalError,Cancel,PushButton,304,243,56,17,1,,Cancel,Bitmap,
+FatalError,Finish,PushButton,236,243,56,17,3,,&Finish,Cancel,
+FatalError,Bitmap,Bitmap,0,0,370,234,1,,WixUI_Bmp_Dialog,Back,
+FatalError,Back,PushButton,180,243,56,17,1,,&Back,Finish,
+FatalError,BottomLine,Line,0,234,370,0,1,,,,
+UserExit,Description,Text,135,80,220,80,196611,,"[ProductName] setup was interrupted. Your system has not been modified. To install this program at a later time, please run the installation again. Click the Finish button to exit the Setup Wizard.",,
+UserExit,Title,Text,135,20,220,60,196611,,{\WixUI_Font_Bigger}[ProductName] Setup Wizard was interrupted,,
+UserExit,Cancel,PushButton,304,243,56,17,1,,Cancel,Bitmap,
+UserExit,Finish,PushButton,236,243,56,17,3,,&Finish,Cancel,
+UserExit,Bitmap,Bitmap,0,0,370,234,1,,WixUI_Bmp_Dialog,Back,
+UserExit,Back,PushButton,180,243,56,17,1,,&Back,Finish,
+UserExit,BottomLine,Line,0,234,370,0,1,,,,
+CustomExitDialog,Description,Text,135,70,220,40,196611,,Click the Finish button to exit the Setup Wizard.,,
+CustomExitDialog,Title,Text,135,20,220,60,196611,,{\WixUI_Font_Bigger}Completed the [ProductName] Setup Wizard,,
+CustomExitDialog,Cancel,PushButton,304,243,56,17,1,,Cancel,Bitmap,
+CustomExitDialog,Finish,PushButton,236,243,56,17,3,,&Finish,Cancel,
+CustomExitDialog,Bitmap,Bitmap,0,0,370,234,1,,WixUI_Bmp_Dialog,Back,
+CustomExitDialog,Back,PushButton,180,243,56,17,1,,&Back,LaunchServiceManagerCheckBox,
+CustomExitDialog,BottomLine,Line,0,234,370,0,1,,,,
+CustomExitDialog,LaunchServiceManagerCheckBox,CheckBox,135,110,10,10,2,LAUNCHSERVICEMANAGER,Launch the Ampla Service Manager.,ReleaseNotesCheckBox,
+CustomExitDialog,ReleaseNotesCheckBox,CheckBox,135,130,10,10,2,LAUNCHRELEASENOTES,View the Ampla Release Notes.,Finish,
+CustomExitDialog,LaunchServiceManagerCheckBoxLabel,Text,151,110,200,10,196610,,Launch the Ampla Service Manager.,,
+CustomExitDialog,ReleaseNotesCheckBoxLabel,Text,151,130,200,10,196610,,View the Ampla Release Notes.,,
+ErrorDlg,N,PushButton,100,80,56,17,3,,&No,,
+ErrorDlg,Y,PushButton,100,80,56,17,3,,&Yes,,
+ErrorDlg,ErrorText,Text,48,15,205,60,131075,,Information text,,
+ErrorDlg,A,PushButton,100,80,56,17,3,,Cancel,,
+ErrorDlg,C,PushButton,100,80,56,17,3,,Cancel,,
+ErrorDlg,ErrorIcon,Icon,15,15,24,24,5242881,,WixUI_Ico_Info,,Information icon|
+ErrorDlg,I,PushButton,100,80,56,17,3,,&Ignore,,
+ErrorDlg,O,PushButton,100,80,56,17,3,,OK,,
+ErrorDlg,R,PushButton,100,80,56,17,3,,&Retry,,
+FilesInUse,Description,Text,20,23,280,20,196611,,Some files that need to be updated are currently in use.,,
+FilesInUse,Text,Text,20,55,330,30,3,,The following applications are using files that need to be updated by this setup. Close these applications and then click &Retry to continue the installation or Exit to exit it.,,
+FilesInUse,Title,Text,15,6,200,15,196611,,{\WixUI_Font_Title}Files in Use,,
+FilesInUse,BottomLine,Line,0,234,370,0,1,,,,
+FilesInUse,Retry,PushButton,304,243,56,17,3,,&Retry,Ignore,
+FilesInUse,Ignore,PushButton,235,243,56,17,3,,&Ignore,Exit,
+FilesInUse,Exit,PushButton,166,243,56,17,3,,E&xit,BannerBitmap,
+FilesInUse,BannerBitmap,Bitmap,0,0,370,44,1,,WixUI_Bmp_Banner,Retry,
+FilesInUse,BannerLine,Line,0,44,370,0,1,,,,
+FilesInUse,List,ListBox,20,87,330,130,7,FileInUseProcess,,,
+MsiRMFilesInUse,Description,Text,20,23,280,20,196611,,Some files that need to be updated are currently in use.,,
+MsiRMFilesInUse,Text,Text,20,55,330,45,3,,The following applications are using files that need to be updated by this setup. You can let Setup Wizard close them and attempt to restart them or reboot the machine later.,,
+MsiRMFilesInUse,Title,Text,15,6,200,15,196611,,{\WixUI_Font_Title}Files in Use,,
+MsiRMFilesInUse,Cancel,PushButton,304,243,56,17,3,,Cancel,ShutdownOption,
+MsiRMFilesInUse,OK,PushButton,240,243,56,17,3,,OK,Cancel,
+MsiRMFilesInUse,BottomLine,Line,0,234,370,0,1,,,,
+MsiRMFilesInUse,BannerBitmap,Bitmap,0,0,370,44,1,,WixUI_Bmp_Banner,OK,
+MsiRMFilesInUse,BannerLine,Line,0,44,370,0,1,,,,
+MsiRMFilesInUse,List,ListBox,20,100,330,80,7,FileInUseProcess,,,
+MsiRMFilesInUse,ShutdownOption,RadioButtonGroup,26,190,305,45,3,WixUIRMOption,,BannerBitmap,
+PrepareDlg,Description,Text,135,70,220,20,196611,,Please wait while the Setup Wizard prepares to guide you through the installation.,,
+PrepareDlg,ActionText,Text,135,100,220,20,196611,,,,
+PrepareDlg,Title,Text,135,20,220,60,196611,,{\WixUI_Font_Bigger}Welcome to the [ProductName] Setup Wizard,,
+PrepareDlg,Cancel,PushButton,304,243,56,17,3,,Cancel,Bitmap,
+PrepareDlg,Bitmap,Bitmap,0,0,370,234,1,,WixUI_Bmp_Dialog,Cancel,
+PrepareDlg,Back,PushButton,180,243,56,17,1,,&Back,,
+PrepareDlg,BottomLine,Line,0,234,370,0,1,,,,
+PrepareDlg,Next,PushButton,236,243,56,17,1,,&Next,,
+PrepareDlg,ActionData,Text,135,125,220,30,196611,,,,
+CancelDlg,Text,Text,48,15,194,30,131075,,Are you sure you want to cancel [ProductName] installation?,,
+CancelDlg,Icon,Icon,15,15,24,24,5242881,,WixUI_Ico_Info,,Information icon|
+CancelDlg,No,PushButton,132,57,56,17,3,,&No,Yes,
+CancelDlg,Yes,PushButton,72,57,56,17,3,,&Yes,No,
+ProgressDlg,ActionText,Text,70,100,285,10,3,,,,
+ProgressDlg,Cancel,PushButton,304,243,56,17,3,,Cancel,BannerBitmap,
+ProgressDlg,Back,PushButton,180,243,56,17,1,,&Back,Next,
+ProgressDlg,BottomLine,Line,0,234,370,0,1,,,,
+ProgressDlg,BannerBitmap,Bitmap,0,0,370,44,1,,WixUI_Bmp_Banner,Back,
+ProgressDlg,BannerLine,Line,0,44,370,0,1,,,,
+ProgressDlg,Next,PushButton,236,243,56,17,1,,&Next,Cancel,
+ProgressDlg,TextInstalling,Text,20,65,330,35,131074,,Please wait while the Setup Wizard installs [ProductName].,,
+ProgressDlg,TitleInstalling,Text,20,15,330,15,196610,,{\WixUI_Font_Title}Installing [ProductName],,
+ProgressDlg,TextChanging,Text,20,65,330,35,131074,,Please wait while the Setup Wizard changes [ProductName].,,
+ProgressDlg,TitleChanging,Text,20,15,330,15,196610,,{\WixUI_Font_Title}Changing [ProductName],,
+ProgressDlg,TextRepairing,Text,20,65,330,35,131074,,Please wait while the Setup Wizard repairs [ProductName].,,
+ProgressDlg,TitleRepairing,Text,20,15,330,15,196610,,{\WixUI_Font_Title}Repairing [ProductName],,
+ProgressDlg,TextRemoving,Text,20,65,330,35,131074,,Please wait while the Setup Wizard removes [ProductName].,,
+ProgressDlg,TitleRemoving,Text,20,15,330,15,196610,,{\WixUI_Font_Title}Removing [ProductName],,
+ProgressDlg,TextUpdating,Text,20,65,330,35,131074,,Please wait while the Setup Wizard updates [ProductName].,,
+ProgressDlg,TitleUpdating,Text,20,15,330,15,196610,,{\WixUI_Font_Title}Updating [ProductName],,
+ProgressDlg,ProgressBar,ProgressBar,20,115,330,10,65537,,Progress done,,
+ProgressDlg,StatusLabel,Text,20,100,50,10,3,,Status:,,
+ResumeDlg,Description,Text,135,80,220,60,196611,,The Setup Wizard will complete the installation of [ProductName] on your computer. Click Install to continue or Cancel to exit the Setup Wizard.,,
+ResumeDlg,Title,Text,135,20,220,60,196611,,{\WixUI_Font_Bigger}Resuming the [ProductName] Setup Wizard,,
+ResumeDlg,Cancel,PushButton,304,243,56,17,3,,Cancel,Bitmap,
+ResumeDlg,Bitmap,Bitmap,0,0,370,234,1,,WixUI_Bmp_Dialog,Back,
+ResumeDlg,Back,PushButton,156,243,56,17,1,,&Back,Install,
+ResumeDlg,BottomLine,Line,0,234,370,0,1,,,,
+ResumeDlg,Install,PushButton,212,243,80,17,8388610,,&Install,InstallNoShield,
+ResumeDlg,InstallNoShield,PushButton,212,243,80,17,2,,&Install,Cancel,
+WaitForCostingDlg,Text,Text,48,15,194,30,3,,Please wait while the installer finishes determining your disk space requirements.,,
+WaitForCostingDlg,Icon,Icon,15,15,24,24,5242881,,WixUI_Ico_Exclam,,Exclamation icon|
+WaitForCostingDlg,Return,PushButton,102,57,56,17,3,,&Return,,
+OutOfRbDiskDlg,Description,Text,20,20,280,20,196611,,Disk space required for the installation exceeds available disk space.,,
+OutOfRbDiskDlg,Text,Text,20,53,330,90,3,,"The highlighted volumes do not have enough disk space available for the currently selected features. You can remove some files from the highlighted volumes, install fewer features, or select a different destination drive. Alternatively, you may choose to disable the installer's rollback functionality. Disabling rollback prevents the installer from restoring your computer's original state should the installation be interrupted in any way. Click Yes if you wish to take the risk of disabling rollback.",,
+OutOfRbDiskDlg,Title,Text,15,6,200,15,196611,,{\WixUI_Font_Title}Out of Disk Space,,
+OutOfRbDiskDlg,BottomLine,Line,0,234,370,0,1,,,,
+OutOfRbDiskDlg,BannerBitmap,Bitmap,0,0,370,44,1,,WixUI_Bmp_Banner,No,
+OutOfRbDiskDlg,BannerLine,Line,0,44,370,0,1,,,,
+OutOfRbDiskDlg,No,PushButton,304,243,56,17,3,,&No,Yes,
+OutOfRbDiskDlg,Yes,PushButton,240,243,56,17,3,,&Yes,BannerBitmap,
+OutOfRbDiskDlg,VolumeList,VolumeCostList,20,150,330,70,4587527,,{120}{70}{70}{70}{70},,
+OutOfDiskDlg,Description,Text,20,20,280,20,196611,,Disk space required for the installation exceeds available disk space.,,
+OutOfDiskDlg,Text,Text,20,53,330,60,3,,"The highlighted volumes do not have enough disk space available for the currently selected features. You can remove some files from the highlighted volumes, install fewer features, or select a different destination drive.",,
+OutOfDiskDlg,Title,Text,15,6,200,15,196611,,{\WixUI_Font_Title}Out of Disk Space,,
+OutOfDiskDlg,OK,PushButton,304,243,56,17,3,,OK,BannerBitmap,
+OutOfDiskDlg,BottomLine,Line,0,234,370,0,1,,,,
+OutOfDiskDlg,BannerBitmap,Bitmap,0,0,370,44,1,,WixUI_Bmp_Banner,OK,
+OutOfDiskDlg,BannerLine,Line,0,44,370,0,1,,,,
+OutOfDiskDlg,VolumeList,VolumeCostList,20,120,330,100,393223,,{120}{70}{70}{70}{70},,
+PrerequisitesDlg,Cancel,PushButton,304,243,56,17,3,,Cancel,Prerequisites,
+PrerequisitesDlg,Back,PushButton,180,243,56,17,3,,&Back,Next,
+PrerequisitesDlg,BottomLine,Line,0,234,370,0,1,,,,
+PrerequisitesDlg,BannerBitmap,Bitmap,0,0,370,44,1,,WixUI_Bmp_Banner,Back,
+PrerequisitesDlg,BannerLine,Line,0,44,370,0,1,,,,
+PrerequisitesDlg,Next,PushButton,236,243,56,17,3,,&Next,Cancel,
+PrerequisitesDlg,BannerTitle,Text,15,6,200,15,196611,,{\WixUI_Font_Title}[ProductName] Server Prerequisites,,
+PrerequisitesDlg,BannerDescription,Text,25,23,280,15,196611,,Please review the following prerequisites before continuing.,,
+PrerequisitesDlg,Prerequisites,ListView,20,60,330,140,65537,Prerequisites,,BannerBitmap,
+InstallTypeDlg,Cancel,PushButton,304,243,56,17,3,,Cancel,BannerBitmap,
+InstallTypeDlg,Back,PushButton,180,243,56,17,3,,&Back,Next,
+InstallTypeDlg,BottomLine,Line,0,234,370,0,1,,,,
+InstallTypeDlg,BannerBitmap,Bitmap,0,0,370,44,1,,WixUI_Bmp_Banner,ServerButton,
+InstallTypeDlg,BannerLine,Line,0,44,370,0,1,,,,
+InstallTypeDlg,Next,PushButton,236,243,56,17,1,,&Next,Cancel,
+InstallTypeDlg,BannerTitle,Text,15,6,200,15,196611,,{\WixUI_Font_Title}Choose Setup Type,,
+InstallTypeDlg,BannerDescription,Text,25,23,280,15,196611,,Choose the setup type that best suits your needs.,,
+InstallTypeDlg,ServerButton,PushButton,40,65,80,17,3,,Full Installation,CustomButton,Full Installation|
+InstallTypeDlg,CustomButton,PushButton,40,118,80,17,3,,Custom Installation,Back,Custom Installation|
+InstallTypeDlg,ServerText,Text,60,85,280,20,3,,"Installs the Ampla Server, configuration tools, client applications, language support, and documentation.",,
+InstallTypeDlg,CustomText,Text,60,138,280,30,3,,Allows users to choose which program features will be installed and where they will be installed. Recommended for advanced users.,,
+SqlInstanceDlg,Text,Text,25,63,354,114,65539,,Please provide the name of the SQL Server instance to house the configuration database:,,
+SqlInstanceDlg,Cancel,PushButton,304,243,56,17,3,,Cancel,BannerBitmap,
+SqlInstanceDlg,Back,PushButton,192,243,56,17,3,,&Back,Next,
+SqlInstanceDlg,BottomLine,Line,0,234,370,0,1,,,,
+SqlInstanceDlg,BannerBitmap,Bitmap,0,0,370,44,1,,WixUI_Bmp_Banner,Instance,
+SqlInstanceDlg,BannerLine,Line,0,44,370,0,1,,,,
+SqlInstanceDlg,Next,PushButton,248,243,56,17,3,,&Next,Cancel,
+SqlInstanceDlg,BannerTitle,Text,15,6,300,15,196611,,{\WixUI_Font_Title}[ProductName] SQL Instance,,
+SqlInstanceDlg,BannerDescription,Text,25,23,280,15,196611,,Provide [ProductName] SQL Server instance.,,
+SqlInstanceDlg,Instance,Edit,96,87,200,18,3,SQLSERVERINSTANCE,,Back,
+SqlInstanceDlg,InstanceLabel,Text,25,90,70,20,65539,,Instance name:,,
+SqlInstanceInvalidDlg,Text,Text,48,15,194,30,131075,,The instance name entered is invalid.,,
+SqlInstanceInvalidDlg,Icon,Icon,15,15,24,24,5242881,,WixUI_Ico_Info,,Information icon|
+SqlInstanceInvalidDlg,Cancel,PushButton,132,57,56,17,3,,Cancel,OK,
+SqlInstanceInvalidDlg,OK,PushButton,72,57,56,17,3,,OK,Cancel,
+ServiceAccountDlg,Text,Text,25,63,354,114,65539,,Please provide an existing account which will run the Ampla service:,,
+ServiceAccountDlg,Password,Edit,96,110,200,18,2097155,SERVICEPASSWORD,,Back,
+ServiceAccountDlg,Cancel,PushButton,304,243,56,17,3,,Cancel,BannerBitmap,
+ServiceAccountDlg,Back,PushButton,192,243,56,17,3,,&Back,Next,
+ServiceAccountDlg,BottomLine,Line,0,234,370,0,1,,,,
+ServiceAccountDlg,BannerBitmap,Bitmap,0,0,370,44,1,,WixUI_Bmp_Banner,Account,
+ServiceAccountDlg,BannerLine,Line,0,44,370,0,1,,,,
+ServiceAccountDlg,Next,PushButton,248,243,56,17,3,,&Next,Cancel,
+ServiceAccountDlg,BannerTitle,Text,15,6,300,15,196611,,{\WixUI_Font_Title}[ProductName] Service Account,,
+ServiceAccountDlg,BannerDescription,Text,25,23,280,15,196611,,Provide [ProductName] service account details.,,
+ServiceAccountDlg,Account,Edit,96,87,200,18,3,SERVICEACCOUNT,,Password,
+ServiceAccountDlg,AccountLabel,Text,25,90,70,20,65539,,Account name:,,
+ServiceAccountDlg,PasswordLabel,Text,25,115,70,20,65539,,Password:,,
+ServiceAccountInvalidDlg,Text,Text,48,15,194,30,131075,,The account name and/or password you entered is invalid.,,
+ServiceAccountInvalidDlg,Icon,Icon,15,15,24,24,5242881,,WixUI_Ico_Info,,Information icon|
+ServiceAccountInvalidDlg,Cancel,PushButton,132,57,56,17,3,,Cancel,OK,
+ServiceAccountInvalidDlg,OK,PushButton,72,57,56,17,3,,OK,Cancel,
+WelcomeDlg,Description,Text,135,80,220,60,196611,,The Setup Wizard will install [ProductName] on your computer. Click Next to continue or Cancel to exit the Setup Wizard.,,
+WelcomeDlg,Title,Text,135,20,220,60,196611,,{\WixUI_Font_Bigger}Welcome to the [ProductName] Setup Wizard,,
+WelcomeDlg,Cancel,PushButton,304,243,56,17,3,,Cancel,Bitmap,
+WelcomeDlg,Bitmap,Bitmap,0,0,370,234,1,,WixUI_Bmp_Dialog,Back,
+WelcomeDlg,Back,PushButton,180,243,56,17,1,,&Back,Next,
+WelcomeDlg,BottomLine,Line,0,234,370,0,1,,,,
+WelcomeDlg,Next,PushButton,236,243,56,17,3,,&Next,Cancel,
+WelcomeDlg,PatchDescription,Text,135,80,220,60,196611,,The Setup Wizard will update [ProductName] on your computer. Click Next to continue or Cancel to exit the Setup Wizard.,,
+LicenseAgreementDlg,Description,Text,25,23,340,15,196611,,Please read the following license agreement carefully.,,
+LicenseAgreementDlg,Title,Text,15,6,200,15,196611,,{\WixUI_Font_Title}End-User License Agreement,,
+LicenseAgreementDlg,Cancel,PushButton,304,243,56,17,3,,Cancel,LicenseText,
+LicenseAgreementDlg,Back,PushButton,180,243,56,17,3,,&Back,Next,
+LicenseAgreementDlg,BottomLine,Line,0,234,370,0,1,,,,
+LicenseAgreementDlg,BannerBitmap,Bitmap,0,0,370,44,1,,WixUI_Bmp_Banner,LicenseAcceptedCheckBox,
+LicenseAgreementDlg,BannerLine,Line,0,44,370,0,1,,,,
+LicenseAgreementDlg,Next,PushButton,236,243,56,17,3,,&Next,Cancel,
+LicenseAgreementDlg,LicenseAcceptedCheckBox,CheckBox,20,207,330,18,3,LicenseAccepted,I &accept the terms in the License Agreement,Print,
+LicenseAgreementDlg,Print,PushButton,112,243,56,17,3,,&Print,Back,
+LicenseAgreementDlg,LicenseText,ScrollableText,20,60,330,140,7,,""{\rtf1\ansi\ansicpg1252\deff0\deflang3081\deflangfe3081{\fonttbl{\f0\fswiss\fprq2\fcharset0 Calibri;}}
+{\*\generator Msftedit 5.41.21.2508;}\viewkind4\uc1\pard\sb120\sa120\qc\b\f0\fs22 Ampla LICENCE\par
+SCHNEIDER ELECTRIC (AUSTRALIA) PTY LIMITED ABN 42 004 969 304\par
+\pard\sb120\sa120 INTRODUCTION\par
+\pard\sb120\sa120\tx1134\b0 This "Licence" sets out the terms under which you may use SCHNEIDER ELECTRIC'S "Ampla" software application ("\b SOFTWARE\b0 ") for the number of end users specified in SCHNEIDER ELECTRIC'S quotes or other document which sets out the financial terms for use of the SOFTWARE to which this Licence relates ("\b Quote\b0 "). \par
+If you either make a copy of, run or use the SOFTWARE, you thereby agree to accept and be bound by the terms of this Licence.\par
+If you do not accept the terms of this Licence, you must not either copy, run or use the SOFTWARE and you must do or refrain from doing (as the case may be) the following:\par
+\pard\fi-1134\li1134\sb120\sa120\tx1134 (a)\tab do not open the pack, if you have acquired a physical copy of the SOFTWARE;\par
+(b)\tab promptly return the unopened SOFTWARE pack and other associated items (including the hardware or software device that activates the SOFTWARE ("\b Licence Key\b0 "), written materials, binders, containers, and hardware, if any) accompanying this Licence or the relevant Quote to the place where you purchased them, to obtain a full refund;\par
+(c)\tab do not download the SOFTWARE or a Licence Key; and\par
+(d)\tab promptly delete the SOFTWARE and all copies of it that you have received in connection with this Licence or the relevant Quote.\par
+\pard\sb120\sa120\tx1134\b TERMS OF LICENCE\par
+1.\tab GRANT OF LICENCE\par
+\b0 In consideration of your payment of the licence fees set out in our quote and your agreement to accept the terms of this Licence, SCHNEIDER ELECTRIC grants to you a non-exclusive licence to use the SOFTWARE on the following basis:\par
+\pard\fi-1134\li1134\sb120\sa120\tx1134 (a)\tab You may install one copy of the SOFTWARE and that copy of the SOFTWARE may be simultaneously used by that number of users equal to the number of client access licences ("\b CALs\b0 ") that you have purchased from SCHNEIDER ELECTRIC. For avoidance of doubt, you acknowledge that you must obtain a CAL for each simultaneous user of the SOFTWARE, whether such use takes place on a single computer at a single location or by a networked system such as Windows Terminal Server, Citrix, and ACP etc.  You may purchase additional CALs pursuant to this Licence, subject to receipt from SCHNEIDER ELECTRIC of a Quote for such rights and compliance by you with the terms of such Quote. The Quote will specify any reporting points for the SOFTWARE and you must only use the SOFTWARE for the number and type of reporting points specified in the Quote that you have purchased from SCHNEIDER ELECTRIC.\b\par
+\b0 (b)\tab You may copy the SOFTWARE for backup purposes only in support of your permitted use of the SOFTWARE.\par
+(c)\tab If you have received the SOFTWARE as a demonstration package, you may install and use the SOFTWARE on your computer for demonstration and evaluation purposes only for up to 60 days after such installation. \par
+(d)\tab You may transfer the SOFTWARE from one computer to another, provided that you do not use the SOFTWARE on more than one computer at a time, in conjunction with the Licence Key.\par
+(e)\tab You may only use the SOFTWARE for your internal business processes.\~ You may not use the SOFTWARE to perform services for any third party or permit a third party to use the SOFTWARE for its or its customers' benefit.\par
+\pard\keep\keepn\sb120\sa120\tx1134\b 2.\tab SOFTWARE UPDATE POLICY\par
+\pard\fi-1134\li1134\sb120\sa120\tx1134\b0 (a)\tab If SCHNEIDER ELECTRIC creates updated versions of the SOFTWARE, it will not be obliged to supply such updates to you unless you have a valid support membership contract with SCHNEIDER ELECTRIC and you upgrade the SOFTWARE during the period that it is current. \par
+(b)\tab Updated versions of the SOFTWARE will be supplied and licensed subject to the terms of this Licence, as varied by SCHNEIDER ELECTRIC at the time of supply of any updated version.\par
+(c)\tab Any reference to the SOFTWARE in this Licence will include any updated version provided to you by SCHNEIDER ELECTRIC or its distributors\par
+\pard\keep\keepn\sb120\sa120\tx1134\b 3.\tab LICENCE KEY\par
+\pard\fi-1134\li1134\sb120\sa120\tx1134\b0 (a)\tab You acknowledge that the SOFTWARE is protected by a lock and cannot be used except in conjunction with a valid Licence Key issued by or on behalf of SCHNEIDER ELECTRIC. \par
+(b)\tab You may retain the Licence Key to use the SOFTWARE for the term of this Licence.\~ \par
+(c)\tab If you wish to replace a copy of the SOFTWARE or a Licence Key and SCHNEIDER ELECTRIC agrees to provide you with a replacement copy, you must provide statutory declaration to SCHNEIDER ELECTRIC:\par
+\pard\fi-1134\li2268\sb120\sa120\tx1134 (i) \tab at SCHNEIDER ELECTRIC's option, either before it provides the replacement SOFTWARE or Licence Key or promptly after it provides it and, in any event, within 3 days after it provides it; and \par
+(ii)\tab in a form acceptable to SCHNEIDER ELECTRIC, signed by you that confirms you have permanently deleted the SOFTWARE or Licence Key that is to be replaced and that you have not retained the SOFTWARE or Licence Key in any form or included it with any other software or system owned, operated or controlled by you.\par
+\pard\sb120\sa120\tx1134\b 3.\tab COPYRIGHT\par
+\pard\fi-1134\li1134\sb120\sa120\tx1134\b0 (a)\tab SCHNEIDER ELECTRIC owns and will retain all copyright in the SOFTWARE.\par
+(b)\tab You may be held legally responsible for any copyright infringement, which is caused or facilitated by your failure to observe the terms of this Licence. \par
+(c)\tab You must not copy the SOFTWARE, the Licence Key, or any written materials, except as expressly allowed in this Licence.\par
+(d)\tab Subject to any statutory rights that you may have, you must not modify, adapt, translate, reverse engineer, decompile, or disassemble the SOFTWARE or Licence Key, or create derivative works based on the SOFTWARE or the written materials. \par
+\pard\keep\keepn\sb120\sa120\tx1134\b 4.\tab TRANSFER RESTRICTIONS\par
+\pard\fi-1134\li1134\sb120\sa120\tx1134\b0 (a)\tab You agree that the Licence is personal to you and that you must not transfer, assign or otherwise dispose of the SOFTWARE, the Licence Key, or the written materials, on any basis without the prior written consent of SCHNEIDER ELECTRIC. \par
+(b)\tab SCHNEIDER ELECTRIC has the right to refuse consent to a transfer, assignment or other disposal of the SOFTWARE as it sees fit, including if in SCHNEIDER ELECTRIC\rquote s opinion such transfer, assignment or disposal might cause damage to SCHNEIDER ELECTRIC\rquote s financial position or reputation if there is a possibility that the proposed transferee is unable or unwilling to strictly observe all of the restrictions and obligations otherwise binding on you.\par
+\pard\keep\keepn\sb120\sa120\tx1134\b 5.\tab VERIFYING COMPLIANCE\par
+\pard\fi-1134\li1134\sb120\sa120\tx1134\b0 (a)\tab You must keep records relating to the SOFTWARE and the number of copies of the SOFTWARE made by your organisation or otherwise on your organisation's computer systems.  SCHNEIDER ELECTRIC may verify your compliance with this Licence, at its expense, during the term of this Licence and for 1 year after the end of the term.\par
+(b)\tab You must promptly provide SCHNEIDER ELECTRIC with all information that it requests to allow it to verify your compliance with this Licence.\par
+(c)\tab If the verification referred to in clause (a) finds unlicensed use of the SOFTWARE of 5% or more, measured against the number of persons permitted to use the SOFTWARE under this Licence, you must promptly order sufficient licences to cover your use of the SOFTWARE and pay SCHNEIDER ELECTRIC what is owed and reimburse SCHNEIDER ELECTRIC its costs incurred in the verification within 30 days. \par
+\pard\keep\keepn\sb120\sa120\tx1134\b 6.\tab EXPORT CONTROL\par
+\pard\fi-1134\li1134\sb120\sa120\tx1134\b0\tab The export of the SOFTWARE from Australia, the United States of America or any other country where sold may be subject to control or restriction by applicable local law. You are solely responsible for determining the existence and application of any such law to any proposed export and for obtaining any needed authorization.\~ You agree not to export the SOFTWARE from any country in violation of applicable legal restrictions on such export.\par
+\b 7.\tab WARRANTIES AND LIABILITY\par
+\b0 (a)\tab You agree that the warranties expressed in this Licence are the only warranties offered by SCHNEIDER ELECTRIC in connection with the SOFTWARE.\par
+(b)\tab To the full extent permitted by law, any terms implied into this Licence, including implied warranties of fitness for a particular purpose and merchantability, are excluded. \par
+(c)\tab If you install, run or use the SOFTWARE in Australia, then in respect of any liability arising from or in relation to this Licence that cannot be excluded, the liability of SCHNEIDER ELECTRIC for a breach of a mandatorily implied warranty is limited to, at SCHNEIDER ELECTRIC's option, repairing the goods, replacing the goods or re-supplying the goods or services or paying the cost of repair or re-supply.\par
+(d)\tab Where you purchase the SOFTWARE in hard copy, SCHNEIDER ELECTRIC warrants that any media on which the SOFTWARE is supplied and any Licence Key will function free of manufacturing defects for 30 days after your date of purchase as specified in the relevant invoice.  If you give notice of a manufacturing defect in that media or any Licence Key to SCHNEIDER ELECTRIC during the 30 day period after your purchase, and if SCHNEIDER ELECTRIC acknowledges the defect, you may return the defective media or Licence Key to an authorised distributor as specified to you by SCHNEIDER ELECTRIC, for replacement of the item without charge.\par
+(e)\tab The maximum aggregate liability (whether in contract, tort (including negligence) or otherwise) of SCHNEIDER ELECTRIC is limited to the licence fees paid by you under this Licence.\par
+(f)\tab You agree that you have been solely responsible for your selection of the SOFTWARE to achieve your intended results and for your use of and the results obtained from your use of the SOFTWARE.\par
+(g)\tab Notwithstanding any other term of this Licence, SCHNEIDER ELECTRIC is not liable under any circumstances whatsoever for any consequential damage or loss (including, without limitation, loss of market, opportunity or contracts) or loss of profit, whether to people or property, arising directly or indirectly pursuant to this Licence or the delivery, supply or operation of the SOFTWARE (including because of a defect, apparent or latent, in the SOFTWARE).\par
+(h)\tab Notwithstanding any other term of this Licence, SCHNEIDER ELECTRIC's liability for any loss or damage arising out of this Licence is reduced proportionally to the extent the act or omission (deliberate or negligent) of you or any other person (other than SCHNEIDER ELECTRIC or its employees, agents or subcontractors) contributed to the loss or damage incurred.\par
+\pard\sb120\sa120\tx1134\b 8.\tab TERMINATION\par
+\pard\fi-1134\li1134\sb120\sa120\tx1134\b0 (a)\tab SCHNEIDER ELECTRIC may, by notice to you, immediately terminate this Licence or any part of it, if you fail to comply with any provision of this Licence or if, in SCHNEIDER ELECTRIC's opinion, you are or are likely to become insolvent.\par
+(b)\tab Promptly on termination of the Licence, you must permanently delete all copies of the SOFTWARE from any computer system used by you and return at your cost all media provided to you by SCHNEIDER ELECTRIC containing a copy of the SOFTWARE, the Licence Key and the written materials to SCHNEIDER ELECTRIC, accompanied by a statutory declaration in a form acceptance to SCHNEIDER ELECTRIC signed by you that confirms you have permanently deleted the SOFTWARE and not retained the SOFTWARE in any form or included it with any other software or system owned, operated or controlled by you.\par
+(c)\tab Termination of this Licence does not affect any rights or remedies which SCHNEIDER ELECTRIC may otherwise have against you under this Licence or at law.\par
+\pard\sb120\sa120\tx1134\b 9.\tab GOVERNING LAW\par
+\pard\fi-1134\li1134\sb120\sa120\tx1134\b0 (a)\tab The laws of New South Wales, Australia, govern this Licence.\par
+(b)\tab The parties will submit to the courts of that state on any matter or dispute arising from this Licence.\par
+\pard\sb120\sa120\tx1134\b 10.\tab COMPLETE AGREEMENT AND MISCELLANEOUS\par
+\pard\fi-1134\li1134\sb120\sa120\tx1134\b0 (a)\tab This Licence and the Quote constitute the entire agreement between you and SCHNEIDER ELECTRIC in relation to your right to use the SOFTWARE.   To the extent of any inconsistency between the Licence and the Quote, the Licence prevails.\par
+(b)\tab No oral or written information, statement, opinion or advice allegedly given by SCHNEIDER ELECTRIC or anyone on its behalf shall create any liability or extend or vary the scope of the warranties expressed in this Licence.\par
+(c)\tab By accepting the terms of this Licence, you expressly acknowledge and confirm to SCHNEIDER ELECTRIC that in making your purchase, you have not relied on any information, statement, opinion or advice that is not contained in this Licence.\par
+(d)\tab Any change to the terms of this Licence will be effective only if in writing signed by SCHNEIDER ELECTRIC.\par
+(e)\tab Headings in this Licence are just for ease of reference and will not affect its interpretation.\par
+(f)\tab Words expressed in the singular include the plural and vice versa.\par
+(g)\tab Provisions of this Licence that by their nature are intended to survive termination or expiration of this Licence, survive such termination or expiration.\par
+}
+
+"",BannerBitmap,
+VerifyReadyDlg,Remove,PushButton,212,243,80,17,8388608,,&Remove,RemoveNoShield,
+VerifyReadyDlg,Cancel,PushButton,304,243,56,17,3,,Cancel,Back,
+VerifyReadyDlg,Back,PushButton,156,243,56,17,3,,&Back,BannerBitmap,
+VerifyReadyDlg,BottomLine,Line,0,234,370,0,1,,,,
+VerifyReadyDlg,BannerBitmap,Bitmap,0,0,370,44,1,,WixUI_Bmp_Banner,Install,
+VerifyReadyDlg,BannerLine,Line,0,44,370,0,1,,,,
+VerifyReadyDlg,Install,PushButton,212,243,80,17,8388608,,&Install,InstallNoShield,
+VerifyReadyDlg,InstallNoShield,PushButton,212,243,80,17,0,,&Install,Change,
+VerifyReadyDlg,Change,PushButton,212,243,80,17,8388608,,&Change,ChangeNoShield,
+VerifyReadyDlg,ChangeNoShield,PushButton,212,243,80,17,0,,&Change,Repair,
+VerifyReadyDlg,Repair,PushButton,212,243,80,17,0,,Re&pair,Remove,
+VerifyReadyDlg,RemoveNoShield,PushButton,212,243,80,17,0,,&Remove,Update,
+VerifyReadyDlg,Update,PushButton,212,243,80,17,8388608,,&Update,UpdateNoShield,
+VerifyReadyDlg,UpdateNoShield,PushButton,212,243,80,17,0,,&Update,Cancel,
+VerifyReadyDlg,InstallTitle,Text,15,15,300,15,196610,,{\WixUI_Font_Title}Ready to install [ProductName],,
+VerifyReadyDlg,InstallText,Text,25,70,320,80,2,,Click Install to begin the installation. Click Back to review or change any of your installation settings. Click Cancel to exit the wizard.,,
+VerifyReadyDlg,ChangeTitle,Text,15,15,300,15,196610,,{\WixUI_Font_Title}Ready to change [ProductName],,
+VerifyReadyDlg,ChangeText,Text,25,70,320,80,2,,Click Change to begin the installation. Click Back to review or change any of your installation settings. Click Cancel to exit the wizard.,,
+VerifyReadyDlg,RepairTitle,Text,15,15,300,15,196610,,{\WixUI_Font_Title}Ready to repair [ProductName],,
+VerifyReadyDlg,RepairText,Text,25,70,320,80,131074,,Click Repair to repair the installation of [ProductName]. Click Back to review or change any of your installation settings. Click Cancel to exit the wizard.,,
+VerifyReadyDlg,RemoveTitle,Text,15,15,300,15,196610,,{\WixUI_Font_Title}Ready to remove [ProductName],,
+VerifyReadyDlg,RemoveText,Text,25,70,320,80,131074,,Click Remove to remove [ProductName] from your computer. Click Back to review or change any of your installation settings. Click Cancel to exit the wizard.,,
+VerifyReadyDlg,UpdateTitle,Text,15,15,300,15,196610,,{\WixUI_Font_Title}Ready to update [ProductName],,
+VerifyReadyDlg,UpdateText,Text,25,70,320,80,131074,,Click Update to update [ProductName] from your computer. Click Back to review or change any of your installation settings. Click Cancel to exit the wizard.,,
+CustomizeDlg,Description,Text,25,23,280,15,196611,,Select the way you want features to be installed.,,
+CustomizeDlg,Text,Text,25,55,320,20,3,,Click the icons in the tree below to change the way features will be installed.,,
+CustomizeDlg,Title,Text,15,6,210,15,196611,,{\WixUI_Font_Title}Custom Setup,,
+CustomizeDlg,Cancel,PushButton,304,243,56,17,3,,Cancel,BannerBitmap,
+CustomizeDlg,Back,PushButton,192,243,56,17,3,,&Back,Next,
+CustomizeDlg,BottomLine,Line,0,234,370,0,1,,,,
+CustomizeDlg,BannerBitmap,Bitmap,0,0,370,44,1,,WixUI_Bmp_Banner,Tree,
+CustomizeDlg,BannerLine,Line,0,44,370,0,1,,,,
+CustomizeDlg,Next,PushButton,248,243,56,17,3,,&Next,Cancel,
+CustomizeDlg,Tree,SelectionTree,25,85,175,115,7,_BrowseProperty,Tree of selections,Browse,
+CustomizeDlg,Browse,PushButton,294,210,66,17,3,,B&rowse...,Reset,
+CustomizeDlg,Reset,PushButton,10,243,81,17,3,,Re&set,DiskCost,
+CustomizeDlg,DiskCost,PushButton,91,243,100,17,3,,Disk &Usage,Back,
+CustomizeDlg,Box,GroupBox,210,81,150,118,3,,,,
+CustomizeDlg,ItemDescription,Text,215,90,131,50,3,,CustomizeDlgItemDescription-CustomizeDlgItemDescription,,
+CustomizeDlg,ItemSize,Text,215,140,131,50,3,,CustomizeDlgItemSize-CustomizeDlgItemSize,,
+CustomizeDlg,Location,Text,90,210,200,20,3,,CustomizeDlgLocation-CustomizeDlgLocation,,
+CustomizeDlg,LocationLabel,Text,25,210,65,10,3,,Location:,,
+BrowseDlg,Description,Text,25,23,280,15,196611,,Browse to the destination folder.,,
+BrowseDlg,Title,Text,15,6,200,15,196611,,{\WixUI_Font_Title}Change destination folder,,
+BrowseDlg,WixUI_Bmp_Up,PushButton,298,55,19,19,3670019,,WixUI_Bmp_Up,NewFolder,Up one level|
+BrowseDlg,Cancel,PushButton,304,243,56,17,3,,Cancel,ComboLabel,
+BrowseDlg,OK,PushButton,240,243,56,17,3,,OK,Cancel,
+BrowseDlg,BottomLine,Line,0,234,370,0,1,,,,
+BrowseDlg,BannerBitmap,Bitmap,0,0,370,44,1,,WixUI_Bmp_Banner,PathEdit,
+BrowseDlg,BannerLine,Line,0,44,370,0,1,,,,
+BrowseDlg,PathEdit,PathEdit,25,202,320,18,11,_BrowseProperty,,OK,
+BrowseDlg,ComboLabel,Text,25,58,44,10,3,,&Look in:,DirectoryCombo,
+BrowseDlg,DirectoryCombo,DirectoryCombo,70,55,220,80,393227,_BrowseProperty,,WixUI_Bmp_Up,
+BrowseDlg,NewFolder,PushButton,325,55,19,19,3670019,,WixUI_Bmp_New,DirectoryList,Create a new folder|
+BrowseDlg,DirectoryList,DirectoryList,25,83,320,98,15,_BrowseProperty,,PathLabel,
+BrowseDlg,PathLabel,Text,25,190,320,10,3,,&Folder name:,BannerBitmap,
+DiskCostDlg,Description,Text,20,20,280,20,196611,,The disk space required for the installation of selected features.,,
+DiskCostDlg,Text,Text,20,53,330,50,3,,"Highlighted volumes do not have enough disk space available for selected features. You can either remove some files from the highlighted volumes, install fewer features, or select different destination drives.",,
+DiskCostDlg,Title,Text,15,6,200,15,196611,,{\WixUI_Font_Title}Disk Space Requirements,,
+DiskCostDlg,OK,PushButton,304,243,56,17,3,,OK,BannerBitmap,
+DiskCostDlg,BottomLine,Line,0,234,370,0,1,,,,
+DiskCostDlg,BannerBitmap,Bitmap,0,0,370,44,1,,WixUI_Bmp_Banner,OK,
+DiskCostDlg,BannerLine,Line,0,44,370,0,1,,,,
+DiskCostDlg,VolumeList,VolumeCostList,20,100,330,120,393223,,{120}{70}{70}{70}{70},,
+MaintenanceTypeDlg,Description,Text,25,23,340,20,196611,,Select the operation you wish to perform.,,
+MaintenanceTypeDlg,Title,Text,15,6,340,15,196611,,"{\WixUI_Font_Title}Change, repair, or remove installation",,
+MaintenanceTypeDlg,Cancel,PushButton,304,243,56,17,3,,Cancel,BannerBitmap,
+MaintenanceTypeDlg,Back,PushButton,180,243,56,17,3,,&Back,Next,
+MaintenanceTypeDlg,BottomLine,Line,0,234,370,0,1,,,,
+MaintenanceTypeDlg,BannerBitmap,Bitmap,0,0,370,44,1,,WixUI_Bmp_Banner,ChangeButton,
+MaintenanceTypeDlg,BannerLine,Line,0,44,370,0,1,,,,
+MaintenanceTypeDlg,Next,PushButton,236,243,56,17,1,,&Next,Cancel,
+MaintenanceTypeDlg,ChangeText,Text,60,85,280,20,3,,Lets you change the way features are installed.,,
+MaintenanceTypeDlg,RepairText,Text,60,138,280,30,3,,"Repairs errors in the most recent installation by fixing missing and corrupt files, shortcuts, and registry entries.",,
+MaintenanceTypeDlg,RemoveText,Text,60,191,280,20,131075,,Removes [ProductName] from your computer.,,
+MaintenanceTypeDlg,ChangeButton,PushButton,40,65,80,17,3,,&Change,RepairButton,Change Installation|
+MaintenanceTypeDlg,RepairButton,PushButton,40,118,80,17,3,,Re&pair,RemoveButton,Repair Installation|
+MaintenanceTypeDlg,ChangeDisabledText,Text,60,85,280,20,131074,,[ProductName] has no independently selectable features.,,
+MaintenanceTypeDlg,RemoveButton,PushButton,40,171,80,17,3,,&Remove,Back,Remove Installation|
+MaintenanceTypeDlg,RepairDisabledText,Text,60,138,280,30,131074,,"Ampla does not support the Repair feature, please uninstall and reinstall.",,
+MaintenanceTypeDlg,RemoveDisabledText,Text,60,191,280,20,131074,,[ProductName] cannot be removed.,,
+MaintenanceWelcomeDlg,Description,Text,135,70,220,60,196611,,The Setup Wizard allows you to change the way [ProductName] features are installed on your computer or to remove it from your computer. Click Next to continue or Cancel to exit the Setup Wizard.,,
+MaintenanceWelcomeDlg,Title,Text,135,20,220,60,196611,,{\WixUI_Font_Bigger}Welcome to the [ProductName] Setup Wizard,,
+MaintenanceWelcomeDlg,Cancel,PushButton,304,243,56,17,3,,Cancel,Bitmap,
+MaintenanceWelcomeDlg,Bitmap,Bitmap,0,0,370,234,1,,WixUI_Bmp_Dialog,Back,
+MaintenanceWelcomeDlg,Back,PushButton,180,243,56,17,1,,&Back,Next,
+MaintenanceWelcomeDlg,BottomLine,Line,0,234,370,0,1,,,,
+MaintenanceWelcomeDlg,Next,PushButton,236,243,56,17,3,,&Next,Cancel,

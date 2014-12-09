@@ -1,0 +1,3 @@
+ServiceInstall,Name,DisplayName,ServiceType,StartType,ErrorControl,LoadOrderGroup,Dependencies,StartName,Password,Arguments,Component_,Description
+AmplaWorkflowServiceInstall,Ampla Workflow Service,Ampla Workflow Service,32,3,32769,,,[SERVICEACCOUNT],[SERVICEPASSWORD],,Citect.Ampla.Workflow.ServiceHost.exe,A component of Ampla used for executing workflows.
+AmplaServiceInstall,Ampla Server,Ampla Server,32,3,32769,,,[SERVICEACCOUNT],[SERVICEPASSWORD],,Citect.Ampla.Service.exe,

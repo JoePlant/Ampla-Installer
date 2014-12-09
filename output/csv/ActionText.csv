@@ -1,0 +1,12 @@
+Action,Description,Template
+ConfigureIIs,Configuring IIS,
+ConfigureIIsExec,Executing IIS Configuration,
+StartMetabaseTransaction,Starting IIS Metabase Transaction,
+RollbackMetabaseTransaction,Rolling back IIS Metabase Transaction,
+CommitMetabaseTransaction,Committing IIS Metabase Transaction,
+WriteMetabaseChanges,Installing Metabase Keys and Values,
+ConfigureIIs7Exec,Configuring IIS,
+StartIIS7ConfigTransaction,Starting IIS Config Transaction,
+RollbackIIS7ConfigTransaction,Rolling back IIS Config Transaction,
+CommitIIS7ConfigTransaction,Committing IIS Config Transaction,
+WriteIIS7ConfigChanges,Installing Config Keys and Values,

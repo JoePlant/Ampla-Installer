@@ -1,0 +1,20 @@
+
+Error: System.Runtime.InteropServices.ExternalException: Failed to create view with query: SELECT * FROM `ModuleAdminUISequence`
+   at Microsoft.Tools.WindowsInstallerXml.Msi.View..ctor(Database db, String query)
+   at Microsoft.Tools.WindowsInstallerXml.Msi.Database.OpenExecuteView(String query)
+   at LessMsi.Cli.ListTableCommand.Run(List`1 args)
+   at LessMsi.Cli.Program.Main(String[] args)
+
+Usage:
+lessmsi <command> [options] <msi_name> [<path_to_extract\>] [file_names]
+
+Commands:
+  x  Extracts all or specified files from the specified msi_name.	
+  l  Lists the contents of the specified msi table as CSV to stdout.
+  v  Lists the value of the ProductVersion Property in the msi 
+     (typically this is the version of the MSI).
+  o  Opens the specified msi_name in the GUI.
+  h  Shows this help page.
+
+For more information see http://lessmsi.activescott.com
+

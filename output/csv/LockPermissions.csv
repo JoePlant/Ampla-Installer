@@ -1,0 +1,3 @@
+LockObject,Table,Domain,User,Permission
+Diagnostics.RootFolder,CreateFolder,,Administrators,268435456
+HealthManagement.RootFolder,CreateFolder,,Administrators,268435456

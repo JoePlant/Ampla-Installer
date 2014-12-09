@@ -1,0 +1,13 @@
+Feature,Feature_Parent,Title,Description,Display,Level,Directory_,Attributes
+FeatureService,FeatureAmpla,Ampla Server,Ampla Server,2,0,,8
+FeatureConfigurationTools,FeatureAmpla,Configuration Tools,"Installs the tools required to configure and deploy Ampla projects. This includes, but is not limited to, Ampla Studio.",3,0,,8
+FeatureClientApps,FeatureAmpla,Client Applications,"Installs client applications including Production Analyst, the desktop client for viewing and analyzing Ampla data.",4,0,,8
+FeatureAmpla,,Ampla,Ampla,1,1,APPLICATIONFOLDER,24
+FeatureDocumentation,FeatureAmpla,Documentation,Ampla Help files.,5,1,,8
+Feature_Lang_ZhChs,FeatureLang,Chinese (Simplified),Chinese (Simplified) language pack for Production Analyst.,1,1,,8
+FeatureLang,FeatureAmpla,Language Support,Language Support,6,1,,8
+FeatureLangFr,FeatureLang,French,French language pack for Production Analyst.,3,1,,8
+FeatureLangDe,FeatureLang,German,German language pack for Production Analyst.,5,1,,8
+FeatureLangPtBr,FeatureLang,Portuguese (Brazil),Portuguese (Brazil) language pack for Production Analyst.,7,1,,8
+FeatureLangEs,FeatureLang,Spanish,Spanish language pack for Production Analyst.,9,1,,8
+FeatureLangRu,FeatureLang,Russian,Russian language pack for Production Analyst.,11,1,,8

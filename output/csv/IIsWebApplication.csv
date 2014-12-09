@@ -1,0 +1,7 @@
+Application,Name,Isolation,AllowSessions,SessionTimeout,Buffer,ParentPaths,DefaultScript,ScriptTimeout,ServerDebugging,ClientDebugging,AppPool_
+DiagnosticsWebApplication,Diagnostics,1,-2147483648,-2147483648,-2147483648,-2147483648,,-2147483648,-2147483648,-2147483648,AmplaWebAppPool
+DiagnosticsWebApplicationIis6,Diagnostics,1,-2147483648,-2147483648,-2147483648,-2147483648,,-2147483648,-2147483648,-2147483648,AmplaWebAppPool
+AmplaWebApplication,Ampla,1,-2147483648,-2147483648,-2147483648,-2147483648,,-2147483648,-2147483648,-2147483648,AmplaWebAppPool
+AmplaWebApplicationIis6,Ampla,1,-2147483648,-2147483648,-2147483648,-2147483648,,-2147483648,-2147483648,-2147483648,AmplaWebAppPool
+HealthManagementWebApplication,HealthManagement,1,-2147483648,-2147483648,-2147483648,-2147483648,,-2147483648,-2147483648,-2147483648,AmplaWebAppPool
+HealthManagementWebApplicationIis6,HealthManagement,1,-2147483648,-2147483648,-2147483648,-2147483648,,-2147483648,-2147483648,-2147483648,AmplaWebAppPool

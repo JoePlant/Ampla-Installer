@@ -1,0 +1,15 @@
+Action,Condition,Sequence
+CostInitialize,,800
+CostFinalize,,1000
+InstallValidate,,1400
+InstallInitialize,,1500
+InstallFinalize,,6600
+CreateShortcuts,,4500
+PublishFeatures,,6300
+PublishProduct,,6400
+CommonFilesFolder.6492B5CA1425435EB4E109C1192F04D7,,4
+CommonFilesFolder.3689E6D571634F2294B5E633BF0B0BA1,,3
+SystemFolder.246EB7AD_459A_4FA8_83D1_41A46D7634B7,,2
+MsiPublishAssemblies,,6250
+WindowsFolder.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E,,1
+SystemFolder.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E,,1

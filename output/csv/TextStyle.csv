@@ -1,0 +1,4 @@
+TextStyle,FaceName,Size,Color,StyleBits
+WixUI_Font_Normal,Tahoma,8,-2147483648,-2147483648
+WixUI_Font_Bigger,Tahoma,12,-2147483648,-2147483648
+WixUI_Font_Title,Tahoma,9,-2147483648,1

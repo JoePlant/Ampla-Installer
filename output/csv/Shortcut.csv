@@ -1,0 +1,7 @@
+Shortcut,Directory_,Name,Component_,Target,Arguments,Description,Hotkey,Icon_,IconIndex,ShowCmd,WkDir,DisplayResourceDLL,DisplayResourceId,DescriptionResourceDLL,DescriptionResourceId
+AmplaChmShortcut,AmplaShortcutFolder,itb5zfcu|Ampla Studio Help,Ampla.chm,FeatureDocumentation,,,-2147483648,Help.ico,0,-2147483648,,,-2147483648,,-2147483648
+ReleaseNotesShortcut,AmplaShortcutFolder,wrga8eed|Ampla Release Notes,ReleaseNotes.pdf,FeatureAmpla,,,-2147483648,Help.ico,0,-2147483648,,,-2147483648,,-2147483648
+InstallationGuideFolder,AmplaShortcutFolder,uslkho-r|Ampla Installation Guide,AmplaInstallationGuide.pdf,FeatureDocumentation,,,-2147483648,Help.ico,0,-2147483648,,,-2147483648,,-2147483648
+ServicesManagerShortcut,AmplaShortcutFolder,bvu9i7pz|Ampla Service Manager,Citect.Ampla.Services.Manager.exe,FeatureService,/config,,-2147483648,Citect.Ampla.Services.Manager.exe,0,-2147483648,,,-2147483648,,-2147483648
+ServicesManagerStartupShortcut,StartupFolder,35rmmgpx|Ampla Service Manager,Citect.Ampla.Services.Manager.exe,FeatureService,,,-2147483648,Citect.Ampla.Services.Manager.exe,0,-2147483648,,,-2147483648,,-2147483648
+StudioShortcut,AmplaShortcutFolder,utq5vc3p|Ampla Studio,Citect.Ampla.Studio.exe,FeatureConfigurationTools,,,-2147483648,Citect.Ampla.Studio.exe,0,-2147483648,,,-2147483648,,-2147483648

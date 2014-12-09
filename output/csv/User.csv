@@ -1,0 +1,3 @@
+User,Component_,Name,Domain,Password,Attributes
+AmplaWebAppPoolUser,AmplaWebSiteAppPool,[SERVICEUSERNAME],[SERVICEDOMAIN],[SERVICEPASSWORD],768
+AmplaWebAppPoolUserToAdd,AmplaWebAppPoolUserGroup,[SERVICEUSERNAME],[SERVICEDOMAIN],[SERVICEPASSWORD],768

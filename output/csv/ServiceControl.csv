@@ -1,0 +1,3 @@
+ServiceControl,Name,Event,Arguments,Wait,Component_
+AmplaWorkflowServiceControl,Ampla Workflow Service,170,,-2147483648,Citect.Ampla.Workflow.ServiceHost.exe
+AmplaServiceControl,Ampla Server,170,,-2147483648,Citect.Ampla.Service.exe

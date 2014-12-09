@@ -1,0 +1,7 @@
+DirProperties,Access,Authorization,AnonymousUser_,IIsControlledPassword,LogVisits,Index,DefaultDoc,AspDetailedError,HttpExpires,CacheControlMaxAge,CacheControlCustom,NoCustomError,AccessSSLFlags,AuthenticationProviders
+DiagnosticsWebDirProperties,513,4,,0,-2147483648,0,Default.aspx,-2147483648,,-2147483648,,-2147483648,-2147483648,
+DiagnosticsWebDirPropertiesIis6,513,4,,0,-2147483648,0,Default.aspx,-2147483648,,-2147483648,,-2147483648,-2147483648,
+AmplaWebDirProperties,513,5,,0,-2147483648,0,Default.aspx,-2147483648,,-2147483648,,-2147483648,-2147483648,
+AmplaWebDirPropertiesIis6,513,5,,0,-2147483648,0,Default.aspx,-2147483648,,-2147483648,,-2147483648,-2147483648,
+HealthManagementWebDirProperties,513,4,,0,-2147483648,0,Default.aspx,-2147483648,,-2147483648,,-2147483648,-2147483648,
+HealthManagementWebDirPropertiesIis6,513,4,,0,-2147483648,0,Default.aspx,-2147483648,,-2147483648,,-2147483648,-2147483648,

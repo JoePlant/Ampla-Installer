@@ -1,0 +1,2 @@
+AppPool,Name,Component_,Attributes,User_,RecycleMinutes,RecycleRequests,RecycleTimes,IdleTimeout,QueueLimit,CPUMon,MaxProc,VirtualMemory,PrivateMemory,ManagedRuntimeVersion
+AmplaWebAppPool,Ampla AppPool,AmplaWebSiteAppPool,24,AmplaWebAppPoolUser,-2147483648,-2147483648,,-2147483648,-2147483648,0,-2147483648,-2147483648,-2147483648,v4.0

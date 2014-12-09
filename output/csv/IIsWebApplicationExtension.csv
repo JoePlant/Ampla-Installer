@@ -1,0 +1,7 @@
+Application_,Extension,Verbs,Executable,Attributes
+DiagnosticsWebApplicationIis6,,,[ASPNETISAPIDLL],-2147483648
+DiagnosticsWebApplicationIis6,aspx,,[ASPNETISAPIDLL],5
+AmplaWebApplicationIis6,,"GET,HEAD,POST",[ASPNETISAPIDLL],1
+HealthManagementWebApplicationIis6,,,[ASPNETISAPIDLL],-2147483648
+HealthManagementWebApplicationIis6,aspx,,[ASPNETISAPIDLL],5
+HealthManagementWebApplicationIis6,svc,,[ASPNETISAPIDLL],5

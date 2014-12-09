@@ -1,0 +1,71 @@
+Action,Condition,Sequence
+AppSearch,,50
+ConfigureIIs,&FeatureService=3 OR !FeatureService=3,4001
+CostInitialize,,800
+FileCost,,900
+CostFinalize,,1000
+InstallValidate,,1400
+InstallInitialize,,1500
+InstallFiles,,4000
+InstallFinalize,,6600
+CreateShortcuts,,4500
+PublishFeatures,,6300
+PublishProduct,,6400
+SetIIS,IISVERSION AND (IISVERSION = "#5" OR IISVERSION = "#6" OR IISVERSION = "#7"),53
+SetIIS7,IISVERSION = "#7",54
+SetIISGROUP,IISVERSION = "#7",55
+ConfigureUsers,VersionNT > 400,3999
+SetAspnetIsapiDll64,VersionNT64,52
+SetAspnetIsapiDll,NOT VersionNT64,51
+SetAccountPrivilege,NOT Installed,6602
+PopulateAccountProperties,&FeatureService=3,3998
+SetSqlSettings,&FeatureService=3,5809
+SetSqlSettings.Properties,&FeatureService=3,5808
+ConfigureAspNet,&FeatureService=3 AND NOT INSTALLED,4002
+RegisterServiceModel,&FeatureService=3,5805
+CloseServicesManager,&FeatureService=2,1893
+InstallPlatformCounters,(&FeatureService=3 OR &FeatureConfigurationTools=3)        AND (!FeatureService=2 AND !FeatureConfigurationTools=2),5804
+InstallPlatformCounters.Properties,(&FeatureService=3 OR &FeatureConfigurationTools=3)        AND (!FeatureService=2 AND !FeatureConfigurationTools=2),5803
+UninstallPlatformCounters,(&FeatureService=2 AND &FeatureConfigurationTools=2)        OR (&FeatureService=2 AND !FeatureConfigurationTools=2)        OR (&FeatureConfigurationTools=2 AND !FeatureService=2),1899
+UninstallPlatformCounters.Properties,(&FeatureService=2 AND &FeatureConfigurationTools=2)        OR (&FeatureService=2 AND !FeatureConfigurationTools=2)        OR (&FeatureConfigurationTools=2 AND !FeatureService=2),1898
+InstallApplicationsCounters,&FeatureService=3,5802
+InstallApplicationsCounters.Properties,&FeatureService=3,5801
+UninstallApplicationsCounters,&FeatureService=2,1895
+UninstallApplicationsCounters.Properties,&FeatureService=2,1894
+InstallHealthManagement,&FeatureService=3,5807
+InstallHealthManagement.Properties,&FeatureService=3,5806
+UninstallHealthManagement,&FeatureService=2,1897
+UninstallHealthManagement.Properties,&FeatureService=2,1896
+LaunchConditions,,100
+ValidateProductID,,700
+ProcessComponents,,1600
+UnpublishFeatures,,1800
+StopServices,VersionNT,1900
+DeleteServices,VersionNT,2000
+RemoveRegistryValues,,2600
+RemoveShortcuts,,3200
+RemoveDuplicateFiles,,3400
+RemoveFiles,,3500
+RemoveFolders,,3600
+CreateFolders,,3700
+DuplicateFiles,,4210
+WriteRegistryValues,,5000
+InstallServices,VersionNT,5800
+StartServices,VersionNT,5900
+RegisterUser,,6000
+RegisterProduct,,6100
+FindRelatedProducts,,99
+RemoveExistingProducts,,1401
+CommonFilesFolder.6492B5CA1425435EB4E109C1192F04D7,,4
+DIRCA_NEWRETARGETABLEPROPERTY1.6492B5CA1425435EB4E109C1192F04D7,NEWRETARGETABLEPROPERTY1.6492B5CA1425435EB4E109C1192F04D7="",701
+CommonFilesFolder.3689E6D571634F2294B5E633BF0B0BA1,,3
+DIRCA_NEWRETARGETABLEPROPERTY1.3689E6D571634F2294B5E633BF0B0BA1,NEWRETARGETABLEPROPERTY1.3689E6D571634F2294B5E633BF0B0BA1="",702
+_C3D105B2_947F_458B_828E_D81D6F2624A8,NOT REMOVE~="ALL",703
+SystemFolder.246EB7AD_459A_4FA8_83D1_41A46D7634B7,,2
+MsiPublishAssemblies,,6250
+MsiUnpublishAssemblies,,1750
+WindowsFolder.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E,,1
+SystemFolder.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E,,1
+SxsInstallCA,(NOT REMOVE) AND (NOT Version9X),1501
+AllocateRegistrySpace,,1550
+SxsUninstallCA,((Installed AND NOT REINSTALL) OR MsiPatchRemovalList) AND (NOT Version9X),6601

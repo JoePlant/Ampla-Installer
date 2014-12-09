@@ -1,0 +1,7 @@
+FileKey,Component_,FileName,DirProperty,InstallMode
+HealthManagement.AppDataFolder,HealthManagement.CreateAppDataFolder,,HealthManagement.AppDataFolder,2
+LogFiles,RemoveTempFiles,*.log,APPLICATIONFOLDER,2
+TmpFiles,RemoveTempFiles,*.tmp,APPLICATIONFOLDER,2
+AllFiles,HealthManagement.ClearAppDataFolder,*.*,HealthManagement.AppDataFolder,2
+RemoveShortcutFolder,AmplaShortcutFolder,,AmplaShortcutFolder,2
+RemoveAssemblies,RemoveRunTimeInstalledAssemblies,yemhlof4.dll|SchneiderElectric.MES.HealthCheck.*.dll,APPLICATIONFOLDER,2

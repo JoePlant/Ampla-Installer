@@ -1,0 +1,6 @@
+Directory_,Component_
+HealthManagement.AppDataFolder,HealthManagement.CreateAppDataFolder
+Diagnostics.RootFolder,DiagnosticsWebSitePermissions
+WebPortal.Root,AmplaWebSite
+WebPortal.Root,AmplaWebSiteIis6
+HealthManagement.RootFolder,HealthManagementWebSitePermissions
