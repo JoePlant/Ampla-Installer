@@ -1,0 +1,27 @@
+---------------------------
+Ampla Setup
+---------------------------
+Installation options
+    /extract "<Directory>"
+        Extracts all installation packages to the specified directory
+    /msicl "[PROPERTY=PropertyValue] ..."
+        Properties to set for installation
+    /lang <LCID>
+        Locale ID of transform to apply to installation
+    /quiet
+        Quiet mode, no user interaction
+    /passive
+        Unattended mode - progress bar only
+    /norestart
+        Do not restart after the installation is complete
+    /promptrestart
+        Prompts the user for restart if necessary
+    /forcerestart
+        Always restart the computer after installation
+    /uninstall
+        Uninstalls the product
+    /log "<LogFile>"
+        Create a log
+---------------------------
+OK   
+---------------------------
